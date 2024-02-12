@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
-        "target": "ES2016",
-        "module": "CommonJS",
-        "skipLibCheck": true,
-        "noEmit": true,
-        "strict": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true
-    }
-}
+      "target": "ES2017",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "noImplicitReturns": true,
+      "skipLibCheck": true,
+      "noEmit": true
+    },
+  }
