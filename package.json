@@ -1,5 +1,5 @@
 {
-  "name": "@total-typescript/infinite-scroll",
+  "name": "infinite-scroll",
   "version": "0.0.2",
   "description": "",
   "main": "./dist/index.js",
