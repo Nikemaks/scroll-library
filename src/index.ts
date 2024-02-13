@@ -4,7 +4,6 @@ import compileHTML from './utils';
  * scrolls near the end of the list.
  * 
  */
-
 interface InfiniteScrollingOptions {
     callback: () => Promise<any>, 
     targetElementClass: string, 
@@ -64,11 +63,11 @@ export class InfiniteScrolling {
             .catch(e => console.error(e));
     }
 
-    createNewItem(params: any) {
-        return () => compileHTML(this.template, params);
+    createNewItem(params: {[key: string]: any}) {
+        return compileHTML(this.template, params);
     }
 
-    printNewItem(newItem: any) {
+    printNewItem(newItem: string) {
         this.insertContainer?.insertAdjacentHTML('beforeend', newItem);
     }
 
